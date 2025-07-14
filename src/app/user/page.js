@@ -1,12 +1,18 @@
-export default function userpage() {
+// Import Link dari Next.js
+import Link from 'next/link';
+
+export default function UserPage() {
   return (
     <div>
       <div id="nav">
         <h1>connect</h1>
         <div id="list-button">
-          <button>user</button>
+          <a>user</a>
           <button>hak akses</button>
-          <button>logout</button>
+
+          {/* Tombol logout pakai Link */}
+          <Link href="/logout">Logout</Link>
+
         </div>
       </div>
       <div id="konten"></div>
